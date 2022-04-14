@@ -1,0 +1,96 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-image: url("../../images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    margin: auto;
+    padding: 3.5rem;
+    color: white;
+    max-width: 1920px;
+}
+
+main {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+main section {
+    padding: 3rem;
+}
+
+main section h1 {
+    font-size: 2.5rem;
+}
+
+main section input {
+    padding: 0.8rem 3.5rem 0.8rem 3.5rem;
+    border-radius: 3.5rem;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    color: hsl(257, 40%, 49%);
+    border-style: none;
+    transition: all 0.3s;
+}
+
+main section input:hover {
+    color: hsl(258, 40%, 25%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+}
+
+ion-icon {
+    font-size: 24px;
+    margin: 0.5rem;
+    transition: all 0.3s;
+}
+
+ion-icon:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+
+/**==============Responsiveness - For mobile devices=========*/
+
+@media only screen and (max-width: 676px) {
+    body {
+        padding: 0.5rem;
+        color: white;
+    }
+    nav img {
+        width: 35%;
+    }
+    main {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    main div img {
+        width: 100%;
+    }
+    main section h1 {
+        font-size: 1.25rem;
+    }
+    main section p {
+        font-size: 0.875rem;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
